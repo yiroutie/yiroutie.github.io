@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>铁亦柔 · Yirou Tie</title>
+  <meta name="description" content="铁亦柔 Yirou Tie，在组织、商业与 AI 之间搭桥的人。上海交大组织与战略方向硕士；在微信、字节跳动、TikTok Shop 做 AI 产品。">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="author" content="铁亦柔 Yirou Tie">
+
+  <!-- share card -->
+  <link rel="canonical" href="https://yiroutie.github.io/">
+  <meta property="og:url" content="https://yiroutie.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="铁亦柔 · Yirou Tie">
+  <meta property="og:title" content="铁亦柔 · Yirou Tie">
+  <meta property="og:description" content="在组织、商业与 AI 之间搭桥的人。上海 · 巴黎 · 阿斯塔纳 · 首尔。">
+  <meta property="og:image" content="https://yiroutie.github.io/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://yiroutie.github.io/assets/img/og-cover.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/img/portrait-cutout.webp" as="image">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+</head>
+<body class="is-loading">
+
+  <!-- 00 · Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="ld-lines"></div>
+    <div class="ld-count"><span>0</span><small>%</small></div>
+    <div class="ld-bar"><i></i></div>
+  </div>
+
+  <!-- WebGL: particles → globe -->
+  <div id="stage"></div>
+  <div id="globe-labels"></div>
+
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <nav class="nav">
+    <a class="nav__brand" href="#top">Yirou Tie<span>铁亦柔</span></a>
+    <div class="nav__links">
+      <a href="#about" data-i18n="nav.about"></a>
+      <a href="#regions" data-i18n="nav.regions"></a>
+      <a href="#work" data-i18n="nav.work"></a>
+      <a href="#results" data-i18n="nav.results"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 01 · Hero -->
+    <section class="hero" id="top">
+      <div class="hero__sun" data-depth="0.25"></div>
+      <div class="hero__word" data-depth="0.5" aria-hidden="true">Yirou</div>
+      <img class="hero__portrait" data-depth="1" src="assets/img/portrait-cutout.webp" alt="铁亦柔 Yirou Tie" width="890" height="1095">
+      <div class="hero__cn" aria-hidden="true">上海 · 巴黎 · 阿斯塔纳 · 首尔</div>
+
+      <div class="hero__inner">
+        <div class="eyebrow" data-i18n="hero.eyebrow"></div>
+        <h1 class="hero__name">
+          <span class="zh decode" data-final="铁亦柔">铁亦柔</span>
+          <span class="en decode" data-final="Yirou Tie">Yirou Tie</span>
+        </h1>
+        <p class="hero__tagline" data-i18n="hero.tagline"></p>
+        <p class="hero__sub" data-i18n="hero.sub"></p>
+
+        <div class="term" id="term">
+          <div class="term__bar"><i></i><i></i><i></i><span data-i18n="term.title"></span><em data-i18n="term.status"></em></div>
+          <div class="term__body" aria-live="polite">
+            <div class="term__q"></div>
+            <div class="term__a"></div>
+          </div>
+          <div class="term__chips"></div>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <div class="hero__route">SHA <b>→</b> PAR <b>→</b> NQZ <b>→</b> EU <b>→</b> SEL</div>
+        <div class="scroll-cue"><span data-i18n="hero.scroll"></span><i></i></div>
+      </div>
+    </section>
+
+    <!-- 02 · About -->
+    <section class="sec about" id="about">
+      <header class="sec__head" data-reveal>
+        <div class="eyebrow">02 · About</div>
+        <h2 class="sec__title" data-i18n-html="about.title"></h2>
+      </header>
+      <div class="about__grid">
+        <p class="about__bio" data-reveal></p>
+        <div class="mcard panel" data-reveal>
+          <div class="mcard__bar"><span data-i18n="profile.bar"></span><span>2026</span></div>
+          <div class="mcard__tags"></div>
+          <dl class="mcard__rows"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- bridge: particles converge into the globe -->
+    <section class="bridge" id="bridge">
+      <div class="bridge__sticky"><p class="bridge__text"></p></div>
+    </section>
+
+    <!-- 03 · Footprints -->
+    <section class="regions" id="regions">
+      <div class="regions__pin">
+        <div class="regions__panel">
+          <div class="eyebrow" data-i18n="regions.eyebrow"></div>
+          <h2 class="regions__title" data-i18n-html="regions.title"></h2>
+          <ol class="steps"></ol>
+          <article class="card" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · Education -->
+    <section class="sec edu" id="education">
+      <header class="sec__head" data-reveal>
+        <div class="eyebrow">04 · Education</div>
+        <h2 class="sec__title" data-i18n-html="edu.title"></h2>
+      </header>
+      <div class="gantt panel" data-reveal></div>
+      <div class="tokens"></div>
+    </section>
+
+    <!-- 05 · Experience (horizontal on desktop) -->
+    <section class="work" id="work">
+      <div class="work__pin">
+        <header class="work__head">
+          <div>
+            <div class="eyebrow">05 · Experience</div>
+            <h2 class="sec__title" data-i18n-html="work.title"></h2>
+          </div>
+          <div class="work__hint mono" data-i18n="work.hint"></div>
+        </header>
+        <div class="work__track"></div>
+        <div class="work__bar"><i></i></div>
+      </div>
+    </section>
+
+    <!-- 06 · Highlights -->
+    <section class="sec bench" id="results">
+      <header class="sec__head" data-reveal>
+        <div class="eyebrow">06 · Highlights</div>
+        <h2 class="sec__title" data-i18n-html="bench.title"></h2>
+      </header>
+      <div class="bento"></div>
+    </section>
+
+    <!-- 07 · Life -->
+    <section class="sec life" id="life">
+      <header class="sec__head" data-reveal>
+        <div class="eyebrow">07 · Life</div>
+        <h2 class="sec__title" data-i18n-html="life.title"></h2>
+      </header>
+      <div class="life__grid"></div>
+      <button class="dog" id="dog" type="button" aria-label="Woof"></button>
+    </section>
+
+    <!-- 08 · Contact -->
+    <section class="next" id="contact">
+      <div class="next__inner">
+        <div class="eyebrow next__eyebrow">08 · Contact</div>
+        <div class="next__cmd" data-i18n-html="next.cmd"></div>
+        <a class="next__mail" id="mail"></a>
+        <div class="next__row">
+          <button class="btn" id="copy-mail" type="button"><span class="dot"></span><span data-i18n="next.copy"></span></button>
+          <a class="btn" id="xhs" target="_blank" rel="noopener"><span class="dot" style="background:#ff2442"></span><span data-i18n="next.xhs"></span></a>
+        </div>
+        <p class="next__closing" data-i18n="contact.closing"></p>
+        <div class="colophon"><span>© 2026 Yirou Tie · 铁亦柔</span><span>Shanghai · 2026</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/three.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/land-dots.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/sections.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
